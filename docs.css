@@ -1,6 +1,6 @@
 /*docs css*/
-/*Colors We Like =     --cyan :#4dff00;*/
 
+/*DOC FONT CITY */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root{
@@ -46,7 +46,7 @@ a {
 .navLogo {
     width:50px;
     height:50px;
-    background-image: url("../assets/apeFull-8bit.png");
+    background-image: url("/assets/apeFull-8bit.png");
     background-size:cover;
     padding:5px;
     margin:5px;
@@ -73,7 +73,7 @@ align-items:center;
     top: 470px;
     left:150px;
     transform: scale(1.0);
-    background-image: url("../assets/doc-logo-8bit.png");
+    background-image: url("/assets/doc-logo-8bit.png");
     background-size:contain;
     background-repeat: no-repeat;
     transition: transform 1.153s;
@@ -137,30 +137,6 @@ align-items:center;
 .FG-center-right:hover {
     transform: scale(0.5153);
 }
-
-/*.glowButton {
-    max-width:250px;
-    padding: 2px;
-    position: relative;
-    z-index:1;
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    margin-right:25px;
-    filter: brightness(120%);
-  }
-
-  .glowButton:before {
-    z-index:-1;
-    position: absolute;
-    content:"";
-    width:230px;
-    height:230px;
-    left:10px;
-    top:0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    filter: blur(20px);
-
-  }*/
 
   .gradient {
     background-color: #0b090a;
@@ -330,9 +306,7 @@ color:var(--nav);
   justify-content: center;
   background-color:rgba(0, 255, 76, 0.048)!important;
   height:100%;
-  /*border-style:solid;
-  border-color: var(--cyan);
-  border-radius:2.5%;*/
+
 }
 
 .apePluginWRAP {
@@ -341,8 +315,5 @@ color:var(--nav);
   align-items:center;
   justify-content: center;
   flex-direction:column;
-  /*background-color:rgba(0, 255, 76, 0.048)!important;
-  border-style:solid;
-  border-color: var(--cyan);
-  border-radius:2.5%;*/
+
 }
