@@ -1,3 +1,1 @@
-# Docs Homepage
-
-This page is the homepage for the docs portal, see https://docs.apeworx.io
+# Visit [ApeDocs](https://docs.apeworx.io) to explore the complete documentation and unlock the full potential of Ape.
