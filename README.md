@@ -3,11 +3,11 @@
 - URL: https://docs.apeworx.io/
 - Github Repo: https://github.com/ApeWorX/apeworx.github.io
 
-The documentation hub is a great place to add any documentation for a project inside the ape ecossystem. Once you follow the below steps to create the docs for your project, make sure you add it on the hub so more people can find it! When published, open a PR adding your docs link [**here**](#tbd-link-for-a-js-array).
+The documentation hub is a great place to add any documentation for a project inside the ape ecossystem. Once you follow the below steps to create the docs for your project, make sure you add it on the hub so more people can find it! When published, open a PR adding your docs link [**here**](https://github.com/ApeWorX/apeworx.github.io/blob/main/App/App.js#L12).
 
 # Creating Documentation in the Ape Ecosystem
 
-If you're working on a project within the Ape ecosystem, creating user-friendly documentation is crucial. To achieve a seamless documentation experience for your Ape projects, follow the steps below. Any repo configured with GitHub Pages within the Apeworx organization will be published automatically at `https://docs.apeworx.io/repo_name_here`.
+If you're working on a project within the Ape ecosystem follow the steps below, they will set you up with a standard ape template for documentation and deploy them in a [GitHub Pages](https://pages.github.com/) for your repo. Any repo configured with GitHub Pages within the Apeworx organization will be published automatically at `https://docs.apeworx.io/your_repo_name_here`.
 
 ## Quick Start
 
