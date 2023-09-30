@@ -16,6 +16,11 @@ const docs = [
     section: sections.CORE
   },
   {
+    name: "Silverback",
+    link: "https://docs.apeworx.io/silverback/",
+    section: sections.CORE
+  },
+  {
     name: "Ape Starknet",
     link: "https://docs.apeworx.io/ape-starknet/stable/",
     section: sections.PLUGIN
