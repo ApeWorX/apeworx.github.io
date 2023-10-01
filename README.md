@@ -8,7 +8,8 @@ Once you follow the below steps to create the docs for your project, make sure y
 
 # Creating Documentation in the Ape Ecosystem
 
-If you're working on a project within the Ape ecosystem follow the steps below, they will set you up with a standard ape template for documentation and deploy them in a [GitHub Pages](https://pages.github.com/) for your repo. Any repo configured with GitHub Pages within the Apeworx organization will be published automatically at `https://docs.apeworx.io/your_repo_name_here`.
+If you're working on a project within the Ape ecosystem follow the steps below, they will set you up with a standard ape template for documentation and deploy them in a [GitHub Pages](https://pages.github.com/) for your repo.
+Any repo configured with GitHub Pages within the ApeWorX organization will be published automatically at `https://docs.apeworx.io/your_repo_name_here`.
 
 ## Quick Start
 
