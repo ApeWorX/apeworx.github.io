@@ -13,7 +13,7 @@ If you're working on a project within the Ape ecosystem follow the steps below, 
 ## Quick Start
 
 1. **Set Up Repository:**
-   - Create a new repo under the Apeworx organization if one doesn’t exist for your project.
+   - Create a new repo under the ApeWorX organization if one doesn’t exist for your project.
 
 2. **Copy Necessary Files and Folders:**
    - Reference repo for copying files: https://github.com/ApeWorX/ape
