@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  --text: rgba(204, 214, 246, 1);
+  --background: rgba(0, 0, 0, 1);
+  --primary: rgba(77, 255, 0, 1);
+  --primary-transparent: rgba(77, 255, 0, 0.1);
+  --border-radius: 10px;
+  --box-shadow: rgb(95, 240, 208, 15%) 0px 0px 50px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header img.small {
+  width: 60px;
+  height: 60px;
+  align-self: flex-start;
+  margin: 5px;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 3s;
+}
+
+img.small:hover {
+  transform: scale(1.13);
+}
+
+header a {
+  align-self: flex-start;
+}
+
+header img.big {
+  max-width: 620px;
+  width: 80%;
+  transition: transform 1.153s;
+}
+
+header img.big:hover {
+  transform: scale(1.1153);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+main input {
+  /* search bar */
+  width: 90%;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 3px var(--primary);
+  height: 55px;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  color: var(--text);
+}
+
+main li {
+  border: solid 1px var(--primary);
+  background-color: var(--primary-transparent);
+}
+main ul {
+  width: 100%;
+}
+
+main li:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--background);
+}
+main a:hover {
+  color: var(--background);
+}
+
+main .docs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px var(--primary);
+  width: 90%;
+  padding-bottom: 30px;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-transparent);
+  box-shadow: var(--box-shadow);
+  min-height: 30vh;
+}
+
+main .docs ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .docs li {
+  width: 50%;
+  max-width: 500px;
+  margin: 10px 0px;
+  border-radius: var(--border-radius);
+  display: flex;
+}
+main .docs li a {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+main .docs h2 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 1.3em;
+}
+
+main .sections {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: row;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  main .sections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+main .sections li {
+  padding: 20px;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+main .sections li.selected {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  width: 92px;
+  height: 92px;
+}
+
+footer img:hover {
+  opacity: 0.5;
+  animation: horizontal-shaking 0.2s infinite;
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
