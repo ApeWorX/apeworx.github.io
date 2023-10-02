@@ -155,6 +155,12 @@ main .sections {
   }
 }
 
+@media (max-width: 420px) {
+  main .sections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 main .sections li {
   padding: 20px;
   border-radius: var(--border-radius);
