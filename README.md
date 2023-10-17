@@ -9,4 +9,4 @@ Once you follow the below steps to create the docs for your project, make sure y
 
 # Creating Documentation in the Ape Ecosystem
 
-To quickly setup ape-like docs for your repo check https://github.com/ApeWorX/ape-docs-template
+To quickly setup ape-like docs for your repo check https://github.com/ApeWorX/docs-template
