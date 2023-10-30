@@ -3,7 +3,7 @@ import sections from './sections.js'
 export default [
   {
     name: "Ape Framework",
-    link: "https://docs.apeworx.io/ape/stable/index.html",
+    link: "https://docs.apeworx.io/ape/stable",
     section: sections.CORE
   },
   {
