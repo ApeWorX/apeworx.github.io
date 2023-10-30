@@ -105,14 +105,14 @@ main .docs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border: solid 3px var(--primary);
   width: 90%;
   padding-bottom: 30px;
   border-radius: var(--border-radius);
   background-color: var(--primary-transparent);
   box-shadow: var(--box-shadow);
-  min-height: 30vh;
+  /* min-height: 30vh; */
 }
 
 main .docs ul {
