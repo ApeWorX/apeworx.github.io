@@ -214,6 +214,21 @@ export default function App() {
         <img className="big" src="./docs-logo-8bit.png" />
       </header>
       <main>
+
+        <ul className="sections">
+          {Object.keys(sections).map((key) => (
+            <li
+              key={key}
+              className={selectedSection === sections[key] && "selected"}
+              onClick={() => {
+                setSelectedSection(sections[key]);
+                setSearchTerm("");
+              }}
+            >
+              {sections[key]}
+            </li>
+          ))}
+        </ul>
         <input
           placeholder="Search..."
           type="text"
@@ -247,20 +262,7 @@ export default function App() {
               )
           )}
         </div>
-        <ul className="sections">
-          {Object.keys(sections).map((key) => (
-            <li
-              key={key}
-              className={selectedSection === sections[key] && "selected"}
-              onClick={() => {
-                setSelectedSection(sections[key]);
-                setSearchTerm("");
-              }}
-            >
-              {sections[key]}
-            </li>
-          ))}
-        </ul>
+
       </main>
       <footer>
         <a target="_blank" href="https://www.apeworx.io/">
