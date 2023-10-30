@@ -147,7 +147,7 @@ export default [
     section: sections.PLUGIN
   },
   {
-    name: "Project Templates",
+    name: "Project Template",
     link: "https://github.com/ApeWorX/ape-template",
     section: sections.PLUGIN
   },
