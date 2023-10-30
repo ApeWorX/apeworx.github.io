@@ -57,11 +57,6 @@ export default [
     section: sections.PLUGIN
   },
   {
-    name: "Polygon zkEVM",
-    link: "https://github.com/ApeWorX/ape-polygon-zkevm/",
-    section: sections.PLUGIN
-  },
-  {
     name: "Base",
     link: "https://github.com/ApeWorX/ape-base/",
     section: sections.PLUGIN
@@ -89,11 +84,6 @@ export default [
   {
     name: "Avalanche",
     link: "https://github.com/ApeWorX/ape-avalanche",
-    section: sections.PLUGIN
-  },
-  {
-    name: "Flashbots",
-    link: "https://github.com/ApeWorX/ape-flashbots",
     section: sections.PLUGIN
   },
   {
@@ -147,18 +137,8 @@ export default [
     section: sections.PLUGIN
   },
   {
-    name: "Titanoboa",
-    link: "https://github.com/ApeWorX/ape-titanoboa",
-    section: sections.PLUGIN
-  },
-  {
     name: "Address Book",
     link: "https://github.com/ApeWorX/ape-addressbook",
-    section: sections.PLUGIN
-  },
-  {
-    name: "AWS KMS",
-    link: "https://github.com/ApeWorX/ape-aws-kms",
     section: sections.PLUGIN
   },
   {
@@ -167,13 +147,28 @@ export default [
     section: sections.PLUGIN
   },
   {
-    name: "Plugin Template",
+    name: "Project Templates",
     link: "https://github.com/ApeWorX/ape-template",
     section: sections.PLUGIN
   },
   {
     name: "EIP712",
     link: "https://docs.apeworx.io/eip712/stable/",
+    section: sections.OTHER
+  },
+  {
+    name: "EVM Trace",
+    link: "https://github.com/apeworx/evm-trace",
+    section: sections.OTHER
+  },
+  {
+    name: "ETHPM Types",
+    link: "https://github.com/apeworx/ethpm-types",
+    section: sections.OTHER
+  },
+  {
+    name: "ETH Pydantic Types",
+    link: "https://github.com/apeworx/eth-pydantic-types",
     section: sections.OTHER
   },
 ];
