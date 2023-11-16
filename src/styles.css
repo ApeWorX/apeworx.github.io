@@ -105,14 +105,15 @@ main .docs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border: solid 3px var(--primary);
   width: 90%;
   padding-bottom: 30px;
   border-radius: var(--border-radius);
   background-color: var(--primary-transparent);
   box-shadow: var(--box-shadow);
-  min-height: 30vh;
+  /* min-height: 30vh; */
+  margin-bottom: 20px;
 }
 
 main .docs ul {
@@ -145,7 +146,7 @@ main .sections {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-flow: row;
-  margin: 20px 0;
+  margin-bottom: 30px;
   flex-wrap: wrap;
 }
 
@@ -181,6 +182,7 @@ main .sections li.selected {
 footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 footer img {

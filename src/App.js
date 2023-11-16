@@ -1,36 +1,8 @@
 import { useState } from "react";
 import "./styles.css";
 import Stars from "./Stars";
-
-const sections = {
-  ALL: "All",
-  CORE: "Core Framework",
-  PLUGIN: "Plugins",
-  OTHER: "Other Packages"
-};
-
-const docs = [
-  {
-    name: "Ape Framework",
-    link: "https://docs.apeworx.io/ape/stable/index.html",
-    section: sections.CORE
-  },
-  {
-    name: "Silverback",
-    link: "https://docs.apeworx.io/silverback/",
-    section: sections.CORE
-  },
-  {
-    name: "Starknet",
-    link: "https://docs.apeworx.io/ape-starknet/stable/",
-    section: sections.PLUGIN
-  },
-  {
-    name: "EIP712",
-    link: "https://docs.apeworx.io/eip712/stable/",
-    section: sections.OTHER
-  }
-];
+import docs from './docs.js'
+import sections from './sections.js'
 
 export default function App() {
   const [selectedSection, setSelectedSection] = useState(sections.ALL);
@@ -59,6 +31,21 @@ export default function App() {
         <img className="big" src="./docs-logo-8bit.png" />
       </header>
       <main>
+
+        <ul className="sections">
+          {Object.keys(sections).map((key) => (
+            <li
+              key={key}
+              className={selectedSection === sections[key] && "selected"}
+              onClick={() => {
+                setSelectedSection(sections[key]);
+                setSearchTerm("");
+              }}
+            >
+              {sections[key]}
+            </li>
+          ))}
+        </ul>
         <input
           placeholder="Search..."
           type="text"
@@ -92,20 +79,7 @@ export default function App() {
               )
           )}
         </div>
-        <ul className="sections">
-          {Object.keys(sections).map((key) => (
-            <li
-              key={key}
-              className={selectedSection === sections[key] && "selected"}
-              onClick={() => {
-                setSelectedSection(sections[key]);
-                setSearchTerm("");
-              }}
-            >
-              {sections[key]}
-            </li>
-          ))}
-        </ul>
+
       </main>
       <footer>
         <a target="_blank" href="https://www.apeworx.io/">
