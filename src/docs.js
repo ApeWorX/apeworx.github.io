@@ -7,8 +7,8 @@ export default [
     section: sections.CORE
   },
   {
-    name: "cHaOsNeT",
-    link: "https://docs.apeworx.io/cHaOsNeT/latest",
+    name: "cHaOSneT",
+    link: "https://docs.apeworx.io/cHaOSneT/latest",
     section: sections.CORE
   },
   {
