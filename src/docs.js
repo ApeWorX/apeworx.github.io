@@ -7,11 +7,6 @@ export default [
     section: sections.CORE
   },
   {
-    name: "cHaOSneT",
-    link: "https://docs.apeworx.io/cHaOSneT/latest",
-    section: sections.CORE
-  },
-  {
     name: "Silverback",
     link: "https://docs.apeworx.io/silverback/stable",
     section: sections.CORE
