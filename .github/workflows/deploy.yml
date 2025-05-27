@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛬
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '14'
       
@@ -26,7 +26,7 @@ jobs:
           npm run build
       
       - name: Cache build artifacts
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: build
           key: build-artifacts-${{ github.sha }}
@@ -39,16 +39,16 @@ jobs:
       contents: write
     steps:
       - name: Checkout 🛬
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       
       - name: Restore cached build artifacts
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: build
           key: build-artifacts-${{ github.sha }}
       
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: build
