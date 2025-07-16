@@ -18,7 +18,7 @@ export default [
   },
   {
     name: "Safe",
-    link: "https://github.com/ApeWorX/ape-safe",
+    link: "https://docs.apeworx.io/ape-safe/stable",
     section: sections.PLUGIN
   },
   {
