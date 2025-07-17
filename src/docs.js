@@ -47,11 +47,6 @@ export default [
     section: sections.PLUGIN
   },
   {
-    name: "Starknet",
-    link: "https://docs.apeworx.io/ape-starknet/stable/",
-    section: sections.PLUGIN
-  },
-  {
     name: "Polygon",
     link: "https://github.com/ApeWorX/ape-polygon/",
     section: sections.PLUGIN
@@ -107,11 +102,6 @@ export default [
     section: sections.PLUGIN
   },
   {
-    name: "Cairo",
-    link: "https://github.com/ApeWorX/ape-cairo",
-    section: sections.PLUGIN
-  },
-  {
     name: "Foundry",
     link: "https://github.com/ApeWorX/ape-foundry",
     section: sections.PLUGIN
@@ -122,23 +112,8 @@ export default [
     section: sections.PLUGIN
   },
   {
-    name: "Ganache",
-    link: "https://github.com/ApeWorX/ape-ganache",
-    section: sections.PLUGIN
-  },
-  {
-    name: "Jupyter Notebook",
-    link: "https://github.com/ApeWorX/ape-notebook",
-    section: sections.PLUGIN
-  },
-  {
     name: "Tokens",
     link: "https://github.com/ApeWorX/ape-tokens",
-    section: sections.PLUGIN
-  },
-  {
-    name: "Address Book",
-    link: "https://github.com/ApeWorX/ape-addressbook",
     section: sections.PLUGIN
   },
   {
