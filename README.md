@@ -5,19 +5,19 @@
 
 The documentation hub is the top-level index for ApeWorX documentation and maintained Python Ethereum packages.
 
-This is a pure static site built with HTML, CSS, and Alpine.js. Package links are maintained in `src/site.js`.
+This is a pure static site built with HTML, CSS, and Alpine.js. Package links are maintained in `site.js`.
 
 ## Local Development
 
 ```bash
-python3 -m http.server 3000 --directory src
+python3 -m http.server 3000
 ```
 
-The site is served from `src/` at http://localhost:3000.
+The site is served from the repository root at http://localhost:3000.
 
 ## Deploy
 
-Deploy the contents of `src/` directly, with the root-level `CNAME` preserved for the custom domain. No package manager or build step is required.
+GitHub Pages should be configured to serve from the root folder of the default branch. No package manager, build step, or GitHub Actions workflow is required.
 
 ## Creating Documentation in the Ape Ecosystem
 
