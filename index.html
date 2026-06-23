@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="description"
+    content="ApeWorX documentation hub for Ape, Silverback, plugins, and Ethereum Python packages maintained by ApeWorX.">
+  <title>ApeWorX Docs</title>
+  <link rel="icon" type="image/png" href="./static/favicon.png">
+  <link rel="alternate" type="text/plain" href="./llms.txt" title="LLMs resource map">
+  <link rel="stylesheet" href="https://docs.apeworx.io/design-system/src/static/ape-design.css">
+  <link rel="stylesheet" href="./static/styles.css">
+  <script defer src="./site.js"></script>
+  <script defer src="https://docs.apeworx.io/design-system/src/static/alpine-ext.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "ApeWorX Documentation",
+      "url": "https://docs.apeworx.io",
+      "about": ["Ape Framework", "Silverback", "web3.py", "Ethereum Python"],
+      "publisher": {
+        "@type": "Organization",
+        "name": "ApeWorX",
+        "url": "https://www.apeworx.io"
+      }
+    }
+  </script>
+</head>
+
+<body id="top" x-data="docsHub()">
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <header>
+    <nav>
+      <a href="./" class="brand" aria-label="ApeWorX Docs home">
+        <img src="./static/ape-logo-notext.png" alt="" class="brand-mark">
+        ApeWorX Docs
+      </a>
+      <button class="mobile-menu-toggle" type="button" aria-label="Toggle menu" :aria-expanded="menuOpen"
+        @click="menuOpen = true">Menu</button>
+      <div class="links">
+        <a href="#start">Start</a>
+        <a href="#packages">Packages</a>
+        <a href="https://www.apeworx.io">ApeWorX</a>
+        <a href="https://github.com/ApeWorX">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu-overlay" :class="{ 'open': menuOpen }" :aria-hidden="!menuOpen" @click="menuOpen = false">
+  </div>
+  <aside class="mobile-menu-panel" :class="{ 'open': menuOpen }" :aria-hidden="!menuOpen" x-cloak>
+    <div class="mobile-menu-header">
+      <a href="./" class="brand" @click="menuOpen = false">ApeWorX Docs</a>
+      <button class="mobile-menu-close" type="button" aria-label="Close menu" @click="menuOpen = false">x</button>
+    </div>
+    <div class="mobile-menu-content">
+      <div class="links">
+        <a href="#start" @click="menuOpen = false">Start</a>
+        <a href="#packages" @click="menuOpen = false">Packages</a>
+        <a href="https://www.apeworx.io">ApeWorX</a>
+        <a href="https://github.com/ApeWorX">GitHub</a>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero docs-hero">
+      <img src="./static/docs-logo.png" alt="ApeWorX Docs" class="hero-logo">
+      <h1>Documentation for the Python Ethereum stack</h1>
+      <p class="text-xl muted hero-copy">
+        Find the right docs for Ape, Silverback, web3.py, Ape plugins, SDKs, and maintained Ethereum Python libraries.
+      </p>
+      <div class="hero-actions">
+        <a href="#start" role="button" class="primary">Choose a path</a>
+        <a href="#packages" role="button" class="outline">Search packages</a>
+      </div>
+    </section>
+
+    <section class="quick-start" id="start" aria-labelledby="pathways-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Start here</p>
+        <h2 id="pathways-heading">What are you trying to do?</h2>
+      </div>
+      <div class="grid compact pathway-grid">
+        <article>
+          <small>Smart contracts</small>
+          <h3>Build contracts</h3>
+          <p>Use Ape to compile, test, deploy, script, fork, and interact with contracts.</p>
+          <footer>
+            <a href="https://docs.apeworx.io/ape/stable/userguides/quickstart.html" role="button" class="full">Open Ape Guide</a>
+          </footer>
+        </article>
+        <article>
+          <small>Automation</small>
+          <h3>Run bots</h3>
+          <p>Use Silverback for event-driven and scheduled automation backed by Ape projects.</p>
+          <footer>
+            <a href="https://docs.apeworx.io/silverback/stable/userguides/quickstart.html" role="button" class="full">Open Silverback Guide</a>
+          </footer>
+        </article>
+        <article>
+          <small>Python apps</small>
+          <h3>Use Ethereum from Python</h3>
+          <p>Use web3.py and supporting packages for RPC, contracts, ABI encoding, accounts, and typed data.</p>
+          <footer>
+            <a href="https://web3py.readthedocs.io/" role="button" class="full">Open web3.py Docs</a>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="secondary package-browser" id="packages" aria-labelledby="package-browser-heading">
+      <div class="browser-header">
+        <div>
+          <p class="eyebrow">Package index</p>
+          <h2 id="package-browser-heading">Search by package, purpose, or ecosystem</h2>
+        </div>
+        <div class="result-count">
+          <span x-text="filteredPackages().length"></span>
+          <span>resources</span>
+        </div>
+      </div>
+
+      <div class="toolbar" role="search">
+        <label class="search-field">
+          <span class="sr-only">Search packages</span>
+          <input type="search" placeholder="Try: ledger, arbitrum, ABI, compiler, provider, Safe" x-model.debounce.150ms="query">
+        </label>
+        <div class="tabs" role="tablist" aria-label="Package category">
+          <template x-for="category in categories" :key="category">
+            <button type="button" class="sm" :class="{ 'primary': selectedCategory === category }"
+              @click="selectedCategory = category" x-text="category"></button>
+          </template>
+        </div>
+      </div>
+
+      <div class="package-grid">
+        <template x-for="pkg in filteredPackages()" :key="pkg.name">
+          <article class="package-card">
+            <div class="package-card-top">
+              <small x-text="pkg.category"></small>
+              <span class="status-pill" x-text="pkg.status"></span>
+            </div>
+            <h3 x-text="pkg.name"></h3>
+            <p x-text="pkg.description"></p>
+            <div class="tag-row">
+              <template x-for="tag in pkg.tags" :key="`${pkg.name}-${tag}`">
+                <span x-text="tag"></span>
+              </template>
+            </div>
+            <footer class="package-links">
+              <a :href="pkg.docs" role="button" class="full" x-show="pkg.docs">Docs</a>
+              <a :href="pkg.repo" role="button" class="outline full" x-show="pkg.repo">Source</a>
+            </footer>
+          </article>
+        </template>
+      </div>
+
+      <p class="empty-state" x-show="filteredPackages().length === 0" x-cloak>No matching resources.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>ApeWorX Docs</h3>
+        <p class="muted">A top-level index for ApeWorX documentation and maintained Python Ethereum packages.</p>
+      </div>
+      <div>
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="https://docs.apeworx.io/ape/" class="muted">Ape Framework</a></li>
+          <li><a href="https://docs.apeworx.io/silverback/" class="muted">Silverback</a></li>
+          <li><a href="https://web3py.readthedocs.io/" class="muted">web3.py</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com/ApeWorX" class="muted">GitHub</a></li>
+          <li><a href="https://github.com/orgs/ApeWorX/discussions" class="muted">Discussions</a></li>
+          <li><a href="https://snakecharmers.ethereum.org" class="muted">Snake Charmers Archive</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-xl muted text-sm footer-rule">
+      &copy; 2026 ApeWorX. Built for Ethereum Python.
+    </div>
+  </footer>
+</body>
+
+</html>
