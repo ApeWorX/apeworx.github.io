@@ -1,0 +1,84 @@
+# ApeWorX Documentation
+
+> Canonical resource map for public, non-archived ApeWorX documentation, plugins, packages, SDKs, and maintained Ethereum Python libraries.
+
+Site: https://docs.apeworx.io/
+Organization: https://www.apeworx.io/
+Source: https://github.com/ApeWorX
+
+## Primary Documentation
+
+- Ape Framework: https://docs.apeworx.io/ape/
+- Silverback: https://docs.apeworx.io/silverback/
+- web3.py: https://web3py.readthedocs.io/
+- EIP-712: https://docs.apeworx.io/eip712/
+- ape-safe: https://docs.apeworx.io/ape-safe/
+- ETH Pydantic Types: https://docs.apeworx.io/eth-pydantic-types/
+
+## Libraries
+
+- eth-account: https://eth-account.readthedocs.io/
+- eth-abi: https://eth-abi.readthedocs.io/
+- eth-bloom: https://github.com/ApeWorX/eth-bloom#readme
+- eth-keyfile: https://github.com/ApeWorX/eth-keyfile#readme
+- eth-keys: https://github.com/ApeWorX/eth-keys#readme
+- eth-rlp: https://github.com/ApeWorX/eth-rlp#readme
+- eth-tester: https://github.com/ApeWorX/eth-tester#readme
+- hexbytes: https://hexbytes.readthedocs.io/
+- py-geth: https://github.com/ApeWorX/py-geth#readme
+- py-solc-x: https://solcx.readthedocs.io/
+- py-ssz: https://github.com/ApeWorX/py-ssz#readme
+- py-tokenlists: https://github.com/ApeWorX/py-tokenlists#readme
+- py-trie: https://github.com/ApeWorX/py-trie#readme
+- pyrlp: https://github.com/ApeWorX/pyrlp#readme
+- blake2b-py: https://github.com/ApeWorX/blake2b-py#readme
+- ETHPM Types: https://github.com/ApeWorX/ethpm-types#readme
+- EVM Trace: https://github.com/ApeWorX/evm-trace#readme
+- EVM Chains: https://github.com/ApeWorX/evmchains#readme
+- sphinx-ape: https://github.com/ApeWorX/sphinx-ape#readme
+
+## Ape Plugins
+
+- ape-alchemy: https://github.com/ApeWorX/ape-alchemy#readme
+- ape-arbitrum: https://github.com/ApeWorX/ape-arbitrum#readme
+- ape-avalanche: https://github.com/ApeWorX/ape-avalanche#readme
+- ape-aws: https://github.com/ApeWorX/ape-aws#readme
+- ape-base: https://github.com/ApeWorX/ape-base#readme
+- ape-blast: https://github.com/ApeWorX/ape-blast#readme
+- ape-blockscout: https://github.com/ApeWorX/ape-blockscout#readme
+- ape-bsc: https://github.com/ApeWorX/ape-bsc#readme
+- ape-chainstack: https://github.com/ApeWorX/ape-chainstack#readme
+- ape-drpc: https://github.com/ApeWorX/ape-drpc#readme
+- ape-ens: https://github.com/ApeWorX/ape-ens#readme
+- ape-erpc: https://github.com/ApeWorX/ape-erpc#readme
+- ape-etherscan: https://github.com/ApeWorX/ape-etherscan#readme
+- ape-fantom: https://github.com/ApeWorX/ape-fantom#readme
+- ape-flashbots: https://github.com/ApeWorX/ape-flashbots#readme
+- ape-foundry: https://github.com/ApeWorX/ape-foundry#readme
+- ape-hardhat: https://github.com/ApeWorX/ape-hardhat#readme
+- ape-hyperliquid: https://github.com/ApeWorX/ape-hyperliquid#readme
+- ape-infura: https://github.com/ApeWorX/ape-infura#readme
+- ape-ledger: https://github.com/ApeWorX/ape-ledger#readme
+- ape-notebook: https://github.com/ApeWorX/ape-notebook#readme
+- ape-optimism: https://github.com/ApeWorX/ape-optimism#readme
+- ape-polygon: https://github.com/ApeWorX/ape-polygon#readme
+- ape-polygon-zkevm: https://github.com/ApeWorX/ape-polygon-zkevm#readme
+- ape-safe: https://docs.apeworx.io/ape-safe/
+- ape-solidity: https://github.com/ApeWorX/ape-solidity#readme
+- ape-sonic: https://github.com/ApeWorX/ape-sonic#readme
+- ape-template: https://github.com/ApeWorX/ape-template#readme
+- ape-tenderly: https://github.com/ApeWorX/ape-tenderly#readme
+- ape-titanoboa: https://github.com/ApeWorX/ape-titanoboa#readme
+- ape-tokens: https://github.com/ApeWorX/ape-tokens#readme
+- ape-trezor: https://github.com/ApeWorX/ape-trezor#readme
+- ape-vyper: https://github.com/ApeWorX/ape-vyper#readme
+
+## Ape SDKs
+
+- aave-sdk: https://github.com/ApeWorX/aave-sdk#readme
+- createx-py: https://github.com/ApeWorX/createx-py#readme
+- uniswap-sdk: https://github.com/ApeWorX/uniswap-sdk#readme
+
+## Excluded From This Index
+
+Archived repos, private repos, CI actions, websites, interviews, tests, hackathon projects, one-off examples, and packages not currently present as public ApeWorX repos are intentionally omitted from the public package browser.
